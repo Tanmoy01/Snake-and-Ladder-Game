@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.snakeandladder.PlayAreaController"
+            prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <ImageView fitWidth="500" fitHeight="500" layoutX="300">
+                    <image>
+                        <Image url="@game.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fitWidth="20" fitHeight="50" layoutY="300" layoutX="50">
+                    <image>
+                        <Image url="@redbutton.jpg"/>
+                    </image>
+                </ImageView>
+
+                <Text layoutX="150" layoutY="300" text="Player 1"> </Text>
+                <Text layoutX="150" layoutY="400" text="Player 2"> </Text>
+
+                <ImageView fitWidth="20" fitHeight="50" layoutX="50" layoutY="400">
+                    <image>
+                        <Image url="@bluebutton.jpg"/>
+                    </image>
+                </ImageView>
+
+                <ImageView fx:id="first" fitWidth="100" fitHeight="100" layoutX="30" layoutY="150" onMouseClicked="#roll">
+                    <image>
+                        <Image url="@download.jpg"/>
+                    </image>
+                </ImageView>
+
+                <ImageView fx:id="second" fitWidth="100" fitHeight="100" layoutX="100" layoutY="150" onMouseClicked="#roll">
+                    <image>
+                        <Image url="@download.jpg"/>
+                    </image>
+                </ImageView>
+
+                <Text fx:id="changeturn" layoutY="100" layoutX="150" text="Player 1's turn"></Text>
+                <Text fx:id="number" layoutY="250" layoutX="170"></Text>
+
+                <ImageView fx:id="player1" fitWidth="20" fitHeight="50" layoutY="450" layoutX="250">
+                    <image>
+                        <Image url="@redbutton.jpg"/>
+                    </image>
+                </ImageView>
+                <ImageView fx:id="player2" fitWidth="20" fitHeight="50" layoutX="270" layoutY="450">
+                    <image>
+                        <Image url="@bluebutton.jpg"/>
+                    </image>
+                </ImageView>
+
+            </children>
+
+</AnchorPane>
